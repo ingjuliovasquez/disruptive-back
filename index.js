@@ -22,7 +22,7 @@ app.use(cookieParser());
 
 
 // database connection
-const dbURI = 'mongodb://localhost/authtest';
+const dbURI = 'mongodb://127.0.0.1:27017/authtest';
 mongoose.connect(dbURI)
   .then((result) => app.listen(3000, ()=>console.log("Server on port 3000 & conected to mongoDB")))
   .catch((err) => console.log(err));

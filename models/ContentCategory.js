@@ -14,6 +14,10 @@ const contentCategorySchema = new mongoose.Schema({
     addImage: {
       type: Boolean,
       default: false
+    },
+    addText: {
+      type: Boolean,
+      default: false
     }
   },
 });
