@@ -9,6 +9,7 @@ const cors = require("cors");
 const authRoutes = require('./routes/authRoutes');
 const contentCategoryRoutes = require("./routes/contentCategoryRoutes");
 const postRoutes = require('./routes/postRoutes');
+const userRoutes = require("./routes/userRoutes");
 
 // ----
 const app = express();
@@ -35,3 +36,4 @@ mongoose.connect(dbURI)
 app.use("/api", authRoutes);
 app.use("/api/categories", contentCategoryRoutes);
 app.use("/api/posts", postRoutes);
+app.use("/api/users", userRoutes)

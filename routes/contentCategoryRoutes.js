@@ -1,6 +1,6 @@
 const { Router } = require('express');
 const contentCategoryController = require('../controllers/contentCategoryController');
-const { checkPermissions } = require("../middleware/contentCategoryMiddleware")
+const { checkPermissions } = require("../middleware/checkPermissions")
 
 const router = Router();
 

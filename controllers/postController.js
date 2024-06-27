@@ -75,6 +75,6 @@ module.exports.deletePost = async (req, res) => {
         res.json({ message: "Post deleted successfully" });
     } catch (error) {
         console.error("Error deleting post:", error);
-        res.status(500).json({ message: "Error deleting post" });
+        res.status(500).json({ message: "Error deleting post", error });
     }
 }
